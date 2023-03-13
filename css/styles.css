@@ -11325,7 +11325,7 @@ p.lead {
 
 .subheading {
   font-family: 'Noto Sans TC', sans-serif;
-  text-transform: uppercase;
+  text-transform: lowercase;
   margin-top: 15px;
   font-weight: 500;
   font-size: 1.5rem;
