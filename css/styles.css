@@ -90,7 +90,9 @@ body {
 }
 
 work{
- padding-left: 20 rem;
+ margin-top: 5px;
+ margin-left: 3px;
+ margin-bottom: 5px;
 }
 
 hr {
