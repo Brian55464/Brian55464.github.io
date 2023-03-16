@@ -95,12 +95,12 @@ p.work{
  margin-bottom: 5px;
 }
 
-.forimg{
+div.forimg{
   float:left;
   padding: 5px;
 }
 
-.forimgtext{
+div.forimgtext{
   float: right;
   padding: 20px 20px 0px 0px;
 }
