@@ -4234,7 +4234,7 @@ textarea.form-control-lg {
     overflow-y: visible;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 992px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -11360,7 +11360,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 15rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
