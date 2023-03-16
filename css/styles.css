@@ -89,7 +89,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-span.out{
+div.out{
     max-width: 15rem;
     max-height: 15rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
