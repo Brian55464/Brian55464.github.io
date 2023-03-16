@@ -97,10 +97,16 @@ p.work{
 
 div.forimg{
   padding: 5px;
+  float:left; 
+}
+.forimg img{
+    display: block;
+    width:100%;
 }
 
 div.forimgtext{
   padding: 20px 20px 0px 0px;
+  float: right;
 }
 
 hr {
