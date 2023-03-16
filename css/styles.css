@@ -7289,8 +7289,8 @@ textarea.form-control-lg {
 }
 
 .mx-auto {
-  margin-right:15px !important;
-  margin-left: 15px !important;
+  margin-right:10px !important;
+  margin-left: auto !important;
 }
 
 .my-0 {
@@ -11399,7 +11399,7 @@ p.lead {
     flex-grow: 0;
     width: 100%;
     margin-bottom: auto;
-    margin-top:15rem;
+    margin-top:5rem;
   }
   #sideNav .navbar-collapse .navbar-nav {
     flex-direction: column;
