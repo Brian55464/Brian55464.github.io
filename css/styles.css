@@ -11383,39 +11383,31 @@ p.lead {
     top: 0;
     left: 0;
     display: flex;
-    flex-direction: column;
-    width: 15rem;
-    height: 100vh;
-  }
-  #sideNav .navbar-brand {
-    display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
-  }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 15rem;
-    max-height: 15rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    flex-direction: row; /* 將flex-direction改成row */
+    width: 100%; /* 修改導覽列的寬度，使其佔滿整個畫面 */
+    height: 4rem; /* 修改導覽列的高度 */
   }
   #sideNav .navbar-collapse {
     display: flex;
     align-items: center;
     flex-grow: 0;
-    width: 100%;
     margin-bottom: auto;
-    margin-top:5rem;
+    margin-top: auto;
   }
   #sideNav .navbar-collapse .navbar-nav {
-    flex-direction: column;
-    width: 100%;
+    display: flex; /* 將display改成flex */
+    justify-content: space-between; /* 設定nav-items的間距 */
+    width: 80%; /* 修改navbar-nav的寬度 */
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item {
-    float: left;
+    float: none; /* 將float設為none */
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    float: left;
+    float: none; /* 將float設為none */
+    padding: 1rem; /* 修改nav-link的內距 */
   }
 }
+
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
