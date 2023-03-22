@@ -115,6 +115,10 @@ div.forimgtext{
   float: right;
 }
 
+#about {
+  background-color: lightblue;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
