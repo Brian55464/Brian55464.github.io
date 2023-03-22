@@ -101,11 +101,11 @@ p.work{
  margin-bottom: 5px;
 }
 
-.imglogo{
+img.imglogo{
   max-width: 3rem;
   max-height: 3rem;
 }
-.imgsize{
+img.imgsize{
   margin-right: 40px ;
   margin-left: 30px ;
 }
