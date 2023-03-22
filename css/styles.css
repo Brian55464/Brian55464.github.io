@@ -11401,11 +11401,14 @@ p.lead {
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item {
     float: none; /* 將float設為none */
+    padding: 0 10 0 10px;
     white-space: nowrap;
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     float: none; /* 將float設為none */
-    padding: 1rem; /* 修改nav-link的內距 */
+    padding: 0.5rem; /* 修改nav-link的內距 */
+	  padding: 0 10 0 10px;
+	  margin-left:100px;
     white-space: nowrap;
   }
 }
