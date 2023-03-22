@@ -11396,15 +11396,17 @@ p.lead {
   }
   #sideNav .navbar-collapse .navbar-nav {
     display: flex; /* 將display改成flex */
-    justify-content: space-between; /* 設定nav-items的間距 */
+    justify-content: center ; /* 設定nav-items的間距 */
     width: 80%; /* 修改navbar-nav的寬度 */
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item {
     float: none; /* 將float設為none */
+    white-space: nowrap;
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     float: none; /* 將float設為none */
     padding: 1rem; /* 修改nav-link的內距 */
+    white-space: nowrap;
   }
 }
 
