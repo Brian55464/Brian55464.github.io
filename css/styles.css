@@ -11376,40 +11376,39 @@ p.lead {
 }
 
 @media (min-width: 992px) {
-  #sideNav {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-    position: fixed;
+  #sideNav {  
+    padding:5px;
+    text-align: right;
+    position: right;
+    float: flex;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: row; /* 將flex-direction改成row */
     width: 100%; /* 修改導覽列的寬度，使其佔滿整個畫面 */
-    height: 4rem; /* 修改導覽列的高度 */
+    height: 4.5rem; /* 修改導覽列的高度 */
   }
   #sideNav .navbar-collapse {
     display: flex;
     align-items: center;
     flex-grow: 0;
+    margin-left:auto;
     margin-bottom: auto;
     margin-top: auto;
   }
   #sideNav .navbar-collapse .navbar-nav {
-    display: flex; /* 將display改成flex */
+    display: flex; /* 將display改成flex */ 
     justify-content: center ; /* 設定nav-items的間距 */
-    width: 80%; /* 修改navbar-nav的寬度 */
+    width: 50%; /* 修改navbar-nav的寬度 */
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item {
     float: none; /* 將float設為none */
-    padding: 0 10 0 10px;
     white-space: nowrap;
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     float: none; /* 將float設為none */
-    padding: 0.5rem; /* 修改nav-link的內距 */
-	  padding: 0 10 0 10px;
-	  margin-left:100px;
+     /* 修改nav-link的內距 */
+	  margin-left:15px;
     white-space: nowrap;
   }
 }
