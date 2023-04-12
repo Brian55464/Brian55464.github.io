@@ -95,6 +95,11 @@ img.img-profile{
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
 }
 
+img.setmainimg{
+    max-width: 30%;
+    max-height: 30%;
+}
+
 p.work{
  margin-top: 5px;
  margin-left: 4px;
@@ -108,6 +113,108 @@ img.imglogo{
 img.imgsize{
   margin-right: 40px ;
   margin-left: 30px ;
+}
+
+.first{
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+      
+}
+.first h1 {
+    flex: 1; /* 将p元素平分剩余空间 */
+    margin: 0;
+  }
+  .first img {
+    flex: 0 0 auto; /* 不伸缩，根据图片本身大小显示 */
+    
+  }
+  .first p:first-of-type {
+    text-align: left;
+  }
+  .first span:last-of-type {
+    text-align: right;
+  }
+ .first elementor{
+  display: inline-block;
+  vertical-align: middle; /* 设置垂直对齐方式 */
+  font-size: 16px; /* 恢复字体大小 */
+ }
+ 
+ .slider-container {
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slider {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  animation: slider 10s infinite linear;
+}
+
+.slide {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  animation: slide 10s infinite;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-300px);
+  }
+}
+
+.zoom {
+  animation: zoom 5s infinite alternate;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  10% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  20% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  30% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 
 div.forimg{
@@ -124,9 +231,121 @@ div.forimgtext{
   float: right;
 }
 
-#about {
-  background-color:;
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px; /* 设置footer高度 */
+    background-color: #0d6efd;
+    text-align: center;
+    
 }
+
+.footertext{
+  font-family: 'Noto Sans TC', sans-serif;
+  text-transform: lowercase;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    
+}
+
+.bomp{
+    width: 33%;
+    height: auto;
+    padding: 2px;
+    margin: 0rem;
+    
+}
+
+.inside{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  
+  
+}
+
+.project{
+width: 25%;
+height: auto;
+margin: 0rem;
+text-align: center;
+
+}
+
+.secondbomp{
+  width: 25%;
+  height: auto;
+  padding: 15px;
+  margin-right: 15px;
+  margin-left: 13rem;
+
+}
+.imgbull{
+  width: 100%;
+  height: auto;
+
+}
+
+.postext{
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .inside {
+    width: 50%;
+  }
+
+  .project{
+      width: 100%;
+      height: auto;
+      padding: 15px;
+      margin: 0rem;
+  }
+
+  .secondbomp{
+      width: 100%;
+      height: auto;
+      padding: 15px;
+      margin-left: 0rem;
+      
+      
+  }
+}
+
+/* 小於 400px 的螢幕 */
+@media screen and (max-width: 400px) {
+   .inside {
+        width: 100%;
+  }
+
+  .project{
+      width: 100%;
+      height: auto;
+      padding: 15px;
+      margin: 0rem;
+  }
+
+  .secondbomp{
+      width: 100%;
+      height: auto;
+      padding: 15px;
+      margin-left: 0rem;
+      
+  }
+}
+
+
 
 hr {
   margin: 1rem 0;
@@ -6786,7 +7005,7 @@ textarea.form-control-lg {
   display: inline-flex !important;
 }
 
-.d-none {
+.d-lg-block {
   display: none !important;
 }
 
