@@ -33,7 +33,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #bd5d38;
+  --bs-primary: #CCFBFE;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -88,6 +88,139 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+.aboutsection{
+  width: 100%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.aboutdiv{
+  display: flex;
+  margin-top: 25px;
+  padding: 15px;
+}
+
+.aboutleft .aboutright {
+  flex: 1;
+}
+
+.divabouticon{
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.expsection{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.expdiv{
+  flex-basis: calc(100% / 3);
+  margin-top: 3rem;
+}
+
+.imgfull{
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card {
+  position: relative;
+  width: 85%;
+  height: 250px;
+  perspective: 800px;
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-out;
+}
+
+.card .front {
+  background-color: #f1c40f;
+  transform: rotateY(0deg);
+}
+
+.card .back {
+  background-color: #3498db;
+  padding: 15px;
+  transform: rotateY(180deg);
+}
+
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+
+
+.vertical-line {
+  border-left: 5px solid black;
+  height: 20rem;
+  margin-top: 10px;
+  transform: translateX(-50%);
+}
+
+.centertexth1{
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 1.5rem;
+}
+
+.aboutcentertexth2{
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: -15px;
+  margin-top: 2.5rem;
+}
+
+.aboutcentertexth3{
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 15px;
+}
+
+.aboutcentertexth4{
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px;
+}
+
+.exptexth3{
+  text-align: justify;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.exptexth4{
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+
+
 
 img.img-profile{
     max-width: 15rem;
@@ -236,7 +369,7 @@ footer{
     bottom: 0;
     width: 100%;
     height: 40px; /* 设置footer高度 */
-    background-color: #0d6efd;
+    background-color: #535657;
     text-align: center;
     
 }
@@ -359,7 +492,7 @@ hr:not([size]) {
   height: 1px;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Noto Sans TC";  
@@ -367,6 +500,12 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
   color: #343a40;
 }
+
+.h4{
+  background-color: #FFF;
+}
+
+
 
 h1, .h1 {
   font-size: calc(1.5rem + 5.7vw);
@@ -414,7 +553,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 abbr[title],
@@ -8066,10 +8205,6 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
 }
 
-.bg-primary {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
-}
 
 .bg-secondary {
   --bs-bg-opacity: 1;
@@ -11570,7 +11705,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 h1, .h1 {
@@ -11615,6 +11750,7 @@ p.lead {
     flex-direction: row; /* 將flex-direction改成row */
     width: 100%; /* 修改導覽列的寬度，使其佔滿整個畫面 */
     height: 4.5rem; /* 修改導覽列的高度 */
+    background-color: #535657;
   }
   #sideNav .navbar-collapse {
     display: flex;
