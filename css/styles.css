@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*!
 * Start Bootstrap - Resume v7.0.5 (https://startbootstrap.com/theme/resume)
 * Copyright 2013-2022 Start Bootstrap
@@ -61,7 +62,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #FFF;
 }
 
 *,
@@ -88,6 +89,14 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+.bodyback{
+  background-color: #F2F2E3;
+  background: linear-gradient(to bottom, #F2F2E3, #ECF5FE 150%);
+  z-index: -1;
+}
+
+
 
 .aboutsection{
   width: 100%;
@@ -131,6 +140,29 @@ body {
   top: 0;
   left: 0;
 }
+.schooldiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.schoolp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schoolp2{
+  font-weight: 400;
+  color:#D46767;
+  font-size: 16px;
+}
+.schoolimg{
+  width: 20%;
+  height: 20%;
+  margin-top: 25px;
+  top: 0;
+  left: 0;
+}
 
 .card {
   position: relative;
@@ -151,12 +183,12 @@ body {
 }
 
 .card .front {
-  background-color: #f1c40f;
+  background-color: #fff;
   transform: rotateY(0deg);
 }
 
 .card .back {
-  background-color: #3498db;
+  background-color: #ECF5FE;
   padding: 15px;
   transform: rotateY(180deg);
 }
@@ -182,6 +214,7 @@ body {
   text-align: center;
   font-size: 48px;
   margin-bottom: 1.5rem;
+  color: #5F4E07;
 }
 
 .aboutcentertexth2{
@@ -189,6 +222,8 @@ body {
   font-size: 24px;
   margin-bottom: -15px;
   margin-top: 2.5rem;
+  color: #5D3009;
+  
 }
 
 .aboutcentertexth3{
@@ -196,6 +231,8 @@ body {
   font-size: 20px;
   font-weight: 400;
   padding: 15px;
+  color: #292A2D;
+
 }
 
 .aboutcentertexth4{
@@ -203,6 +240,13 @@ body {
   font-size: 18px;
   font-weight: 400;
   padding: 15px;
+}
+
+.educationtext{
+  text-align: center;
+  font-size: 24px;
+  color: #5D3009;
+ 
 }
 
 .exptexth3{
@@ -231,12 +275,14 @@ img.img-profile{
 img.setmainimg{
     max-width: 30%;
     max-height: 30%;
+    background-color: #EBEBD3;
 }
 
 p.work{
  margin-top: 5px;
  margin-left: 4px;
  margin-bottom: 5px;
+ color: #292A2D;
 }
 
 img.imglogo{
@@ -369,7 +415,7 @@ footer{
     bottom: 0;
     width: 100%;
     height: 40px; /* 设置footer高度 */
-    background-color: #535657;
+    background-color: #083D77;
     text-align: center;
     
 }
@@ -394,6 +440,7 @@ footer{
     height: auto;
     padding: 2px;
     margin: 0rem;
+    color: white;
     
 }
 
@@ -498,7 +545,7 @@ h6, .h6, h5, .h5, h3, .h3, h2, .h2, h1, .h1 {
   font-family: "Noto Sans TC";  
   font-weight: 700;
   line-height: 1.2;
-  color: #343a40;
+  color: #292A2D;
 }
 
 .h4{
@@ -4878,7 +4925,7 @@ textarea.form-control-lg {
   color: #fff;
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.55);
+  color: #EBEBD3;
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
   color: rgba(255, 255, 255, 0.75);
@@ -11684,7 +11731,6 @@ textarea.form-control-lg {
 }
 body {
   padding-top: 2rem;
-  color: #6c757d;
 }
 
 @media (min-width: 992px) {
@@ -11705,7 +11751,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  text-transform: lowercase;
+  text-transform:none ;
 }
 
 h1, .h1 {
@@ -11750,7 +11796,7 @@ p.lead {
     flex-direction: row; /* 將flex-direction改成row */
     width: 100%; /* 修改導覽列的寬度，使其佔滿整個畫面 */
     height: 4.5rem; /* 修改導覽列的高度 */
-    background-color: #535657;
+    background-color:#083D77;
   }
   #sideNav .navbar-collapse {
     display: flex;
