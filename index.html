@@ -20,7 +20,7 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
              <a href="#main"><img class="imglogo  rounded-circle imgsize mb-2" src="assets/img/BrianLOGO.png" alt="Responsive image" /></a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
@@ -28,7 +28,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">人生經歷</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">教育程度</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">專長</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">個人興趣</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">專案成就</a></li>
                 </ul>
               
             </div>
@@ -56,9 +56,11 @@
             </section>
         <div class="container-fluid p-0">
             <!-- About-->
-            <section class="resume-section " id="about">
+            <section class="resume-section bodyback " id="about">
                 <div class="aboutsection">
+                    
                     <p class="aboutcentertexth2">個人自傳 </p>
+                    
                     <p class="centertexth1">About me</p>
 
                     <div class="aboutdiv">
@@ -138,15 +140,21 @@
             </section>
             <hr class="m-0" />
             <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">教育程度</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Shih Hsin University</h3>
-                            <div class="subheading mb-3">世新大學-資訊傳播學系</div>
+            <section class="resume-section  bodyback" id="education">
+                <div class="aboutsection">
+                    <p class="educationtext">教育程度</p>
+                    <p class="centertexth1">education</p>
+                    
+                    <div >
+                        <div class="schooldiv">
+                            <img class = "schoolimg" src = "assets/img/school.png" alt="學校" >
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2018/9~2023/6</span></div>
+                        <div>
+                            <p  class="schoolp" >Shih Hsin University</p>
+                            <h2 class="schoolp">世新大學</h2>
+                            <p class="schoolp schoolp2">2018/6~2023/6</p>
+
+                        </div>
                     </div>
                 </div>
             </section>
@@ -154,8 +162,23 @@
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">專長</h2>
-                    <div class="subheading mb-3"></div>
+                    <p class="educationtext">個人專長</p>
+                    <p class="centertexth1">speciality</p>
+                    <div class="schooldiv">
+                        <ul class="list-inline dev-icons">
+                            <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                            <li class="list-inline-item"><i class="fa-brands fa-java"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+                            <li class="list-inline-item"><i class="fa-brands fa-android"></i></li>
+                            <li class="list-inline-item"><i class="fa-solid fa-video"></i></li>
+                            <li class="list-inline-item"><i class="fa-solid fa-camera"></i></li>
+                            <li class="list-inline-item"><i class="fa-brands fa-bootstrap"></i></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="schooldiv">
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fa-regular fa-circle-dot"></i></span>
@@ -166,7 +189,7 @@
                         <li>
                             <span class="fa-li"><i class="fa-regular fa-circle-dot"></i></span>
                             <h4>
-                            App：JavaScript、API、PHP
+                            App：Java、API、PHP
                             </h4>
                         </li>
                         <li>
@@ -194,24 +217,16 @@
                             </h4>
                         </li>
                     </ul>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-java"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-android"></i></li>
-                        <li class="list-inline-item"><i class="fa-solid fa-video"></i></li>
-                        <li class="list-inline-item"><i class="fa-solid fa-camera"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-bootstrap"></i></li>
-                    </ul>
                 </div>
+               
+            </div>
             </section>
             <hr class="m-0" />
             <!-- Interests-->
-            <section class="resume-section" id="interests">
+            <section class="resume-section  bodyback" id="interests">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">專案成就</h2>
+                    <p class="educationtext">專案成就</p>
+                    <p class="centertexth1">Project</p>
                     <div class="inside">
                         <div class="project">
                         <a target="_blank" href="https://leaongle.shuics.tw/">
@@ -222,7 +237,7 @@
                 
                         <div class="project">
                             <a target="_blank" href="https://univself.com/">
-                            <img class = "imgbull" src = "assets/img/履歷Univself.png" alt="畢專網站" >
+                            <img class = "imgbull" src = "assets/img/履歷Univself.png" alt="univself網站" >
                             <p class="postext">univself網站</p>
                             </a>
                             
@@ -230,7 +245,7 @@
                 
                         <div class="project">
                             <a target="_blank" href="https://dbearland.com/">
-                            <img class = "imgbull" src = "assets/img/履歷熊老闆.png" alt="畢專網站" >
+                            <img class = "imgbull" src = "assets/img/履歷熊老闆.png" alt="熊老闆網站" >
                             <p class="postext">熊老闆網站</p>
                             </a>
                             </div>
@@ -239,15 +254,22 @@
                         <div class="inside">
                             <div class="project">
                                 <a target="_blank" href="http://usr.shu.edu.tw/">
-                                <img class = "imgbull" src = "assets/img/履歷USR.png" alt="畢專網站" >
+                                <img class = "imgbull" src = "assets/img/履歷USR.png" alt="世新大學USR計畫" >
                                 <p class="postext">世新大學USR計畫</p>
+                                </a>
+                            </div>
+
+                            <div class="project">
+                                <a target="_blank" href="https://drive.google.com/drive/folders/1rc5OstZeGca-S3vT3ERx7zF-oOZ8-bfG?usp=sharing">
+                                <img class = "imgbull" src = "assets/img/線上影片剪輯.jpg" alt="影片剪輯" >
+                                <p class="postext">影片剪輯</p>
                                 </a>
                             </div>
                         
                             <div class="project">
-                                <a target="_blank" href="https://brian55464.github.io/">
-                                <img class = "imgbull" src = "assets/img/個人網站.png" alt="畢專網站" >
-                                <p class="postext">個人網站</p>
+                                <a target="_blank" href="https://drive.google.com/drive/folders/1GoVSAIwALX6f5Q8ak73Z0vs51YcMKnSG?usp=sharing">
+                                <img class = "imgbull" src = "assets/img/android.jpg" alt="APP" >
+                                <p class="postext">App連結</p>
                                 </a>
                                     
                             </div>
